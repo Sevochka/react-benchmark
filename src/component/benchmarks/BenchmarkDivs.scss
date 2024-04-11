@@ -1,0 +1,62 @@
+@keyframes benchmarkAnimation {
+  from {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px) scale(2);
+    opacity: 0.5;
+  }
+}
+
+.benchmark {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+.benchmark__items {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.05rem;
+}
+
+.benchmark__item {
+  //position: relative;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: red;
+  //top: 50%;
+  //left: 1%;
+
+  //@for $i from 1 through 10000 {
+  //  &:nth-child(n + #{$i}) {
+  //    background: rgba(random(255), random(255), random(255));
+  //    top: $i * 0.01%;
+  //    left: $i * 0.01%;
+  //    //animation-delay: 10ms;
+  //  }
+  //}
+
+  //&--transition {
+  //  animation: benchmarkAnimation 5s linear forwards;
+  //}
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translateX(200px) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
